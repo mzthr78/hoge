@@ -7,9 +7,10 @@
 </head>
 <body>
     <script type="module">
-        import init from './pkg/hello_wasm.js';
+        import init, { add } from './pkg/hellowasm.js';
         async function run() {
             await init();
+            alert(add(111, 222));
         };
         run();
     </script>    
