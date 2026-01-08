@@ -1,0 +1,15 @@
+{
+  "name": "hellowasm",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "hellowasm_bg.wasm",
+    "hellowasm.js",
+    "hellowasm.d.ts"
+  ],
+  "main": "hellowasm.js",
+  "types": "hellowasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
