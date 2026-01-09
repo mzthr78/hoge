@@ -8,7 +8,15 @@ extern "C" {
 
 #[wasm_bindgen(start)]
 pub fn run() {
-    log("Hello Wasm");
+    log("uaaaaaa");
+
+    let window = web_sys::window().unwrap();
+    let document = window.document().unwrap();
+
+    let app = document.get_element_by_id("app").unwrap();
+    let p = document.create_element("p").unwrap();
+    p.set_inner_html("hogehogehoge");
+    app.append_child(&p).unwrap();
 }
 
 #[wasm_bindgen]
